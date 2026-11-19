@@ -16,7 +16,7 @@ there:
 ## Usage
 
 ```sh
-cd /home/saltmeyer/opencode/letterboxd/diary
+cd diary    # from the project root
 
 python3 generate_site.py                # writes site/index.html
 python3 generate_site.py -o out.html    # write somewhere else
@@ -51,7 +51,7 @@ so it can be opened directly or uploaded as-is.
 ## Example run
 
 ```sh
-cd /home/saltmeyer/opencode/letterboxd/diary
+cd diary    # from the project root
 python3 build.py --no-commit           # ensure diary.json is fresh
 cd ../sneak-preview
 python3 sneak-gap.py --csv sneak-gap.csv
@@ -62,7 +62,7 @@ python3 generate_site.py               # writes site/index.html
 ## Deploying to GitHub Pages
 
 ```sh
-cd /home/saltmeyer/opencode/letterboxd/diary
+cd diary    # from the project root
 python3 generate_site.py
 cp site/index.html ../sirconanad.github.io/index.html
 cd ../sirconanad.github.io

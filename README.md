@@ -13,8 +13,9 @@ Every script below consumes the same input: a Letterboxd data export zip.
 1. Go to <https://letterboxd.com/settings/data/>
 2. Click **Export your data** (a `letterboxd-<username>-<timestamp>-utc.zip` file
    downloads)
-3. Drop the zip anywhere in this project (`/home/saltmeyer/opencode/letterboxd/`)
-   or pass its path explicitly with `--export` / as an argument
+3. Drop the zip anywhere in the project root (the folder that contains
+   `graphs/`, `tags/`, `sneak-preview/` and `diary/`) or pass its path
+   explicitly with `--export` / as an argument
 
 The scripts automatically pick the **newest** zip in the project. Re-download the
 export whenever your diary changes (new films, edited ratings, tag changes).
@@ -50,5 +51,8 @@ letterboxd-*.zip
 
 - Python 3.10+
 - A `letterboxd-*.zip` export in the project (see above)
-- TMDB key in `/home/saltmeyer/opencode/letterboxd/.env` — only needed for
-  `sneak-gap.py`
+- TMDB key in the project's `.env` (a `.env` file in the project root,
+  gitignored) — only needed for `sneak-gap.py`
+
+> The `cd` examples in the per-script guides change into a project subfolder
+> (e.g. `cd graphs`), so run them from wherever you checked out the code.

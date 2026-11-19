@@ -10,7 +10,7 @@ SVG file.
 ## Usage
 
 ```sh
-cd /home/saltmeyer/opencode/letterboxd/graphs
+cd graphs    # from the project root
 
 python3 graph.py                 # the current year (uses newest export)
 python3 graph.py --all           # whole diary, every year

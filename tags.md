@@ -10,7 +10,7 @@ terminal, and optionally exports JSON data and an SVG chart.
 ## Usage
 
 ```sh
-cd /home/saltmeyer/opencode/letterboxd/tags
+cd tags     # from the project root
 
 python3 tags.py                        # top 10 tags in detail (newest export)
 python3 tags.py letterboxd-....zip     # explicit export

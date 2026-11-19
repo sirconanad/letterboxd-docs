@@ -19,7 +19,7 @@ right day). Also maintains `diary.json` and one markdown file per film.
 ## Usage
 
 ```sh
-cd /home/saltmeyer/opencode/letterboxd/diary
+cd diary    # from the project root
 
 python3 build.py               # read export, write files, backdated commits
 python3 build.py --no-commit   # read + write files only (no commits)

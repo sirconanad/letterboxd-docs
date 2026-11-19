@@ -14,7 +14,7 @@ The German premiere dates come from TheMovieDB. The API key is read from the
 project's `.env` (already set for you):
 
 ```
-/home/saltmeyer/opencode/letterboxd/.env
+<project-root>/.env     # a file named .env in the project root
 TMDB_API_KEY=your_key
 ```
 
@@ -24,7 +24,7 @@ It can also be supplied via the `TMDB_API_KEY` environment variable or
 ## Usage
 
 ```sh
-cd /home/saltmeyer/opencode/letterboxd/sneak-preview
+cd sneak-preview    # from the project root
 
 python3 sneak-gap.py                       # full analysis (uses newest export)
 python3 sneak-gap.py --csv sneak-gap.csv --markdown sneak-gap.md
