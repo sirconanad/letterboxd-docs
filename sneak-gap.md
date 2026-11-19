@@ -51,8 +51,10 @@ python3 sneak-gap.py --export ../letterboxd-....zip
   release, type 3), looked up once per film.
 - **Cache:** German release lookups are cached in `sneak-cache.json`
   (gitignored) so re-runs don't hit TMDB again.
-- **`--csv`** writes `sneak-gap.csv` (columns: `title, year, watched,
-  kinostart, gap_days, tags, tmdb_id`), sorted by watched date (newest first).
+- **`--csv`** writes `sneak-gap.csv` (columns: `title, year, rating, liked,
+  watched, kinostart, gap_days, tags, tmdb_id`), sorted by watched date
+  (newest first). `rating` is your diary rating (0.5–5, blank if unrated) and
+  `liked` is `yes` when the film is in your export's likes.
 - **`--markdown`** writes `sneak-gap.md`, a human-readable table + summary.
 
 The terminal table is sorted by watched date (newest first) and ends with a
