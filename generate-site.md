@@ -41,7 +41,7 @@ contribution-graph renderer from `../graphs/graph.py` automatically.
 - **Cinema days** — per-year contribution graphs
 - **Monthly activity** — a line chart of films watched per month
 - **Most-used tags** — horizontal bars (top 12)
-- **Favourites** — every 5★ & liked film, grouped by title
+- **Favorites** — films watched 3+ times, shown with their movie posters
 - **Sneak / OV-sneak vs. German cinema release** — the full table, sorted by
   watched date (newest first)
 
